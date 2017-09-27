@@ -9,7 +9,7 @@
       <h1>Search for Recipes</h1>
       <div class="app__search-container">
         <form v-on:submit.prevent="search">
-          <input class="input app__search-field" type="text" placeholder="Search for Recipes..." v-model="query">
+          <input class="input app__search-field" type="text" placeholder="Put an ingredient in here..." v-model="query">
           <button class="button app__search-button" type="button" v-on:click="search">Search</button>
         </form>
       </div>
