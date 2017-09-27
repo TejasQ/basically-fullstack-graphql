@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>My GraphQL App!</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <main class="app" id="app">
+      <h1>Search for Recipes</h1>
+      <div class="app__search-container">
+        <form v-on:submit.prevent="search">
+          <input class="input app__search-field" type="text" placeholder="Search for Recipes..." v-model="query">
+          <button class="button app__search-button" type="button" v-on:click="search">Search</button>
+        </form>
+      </div>
+      <div class="app__results" v-if="recipes.length">
+        <ul class="results-list">
+          <li class="results-list__result" v-for="recipe in recipes">
+            <a class="card" target="_blank" v-bind:href="recipe.href">
+              <img class="card__image" v-bind:alt="recipe.title" v-bind:src="recipe.thumbnail">
+              <h3 class="card__title">{{recipe.title}}</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div v-if="searched && !recipes.length">
+        <h2>No Results 🙁</h2>
+      </div>
+    </main>
+
+    <!-- One of the reasons I ❤️ vue , it's basically as easy as jQuery to get started with -->
+    <script src="https://vuejs.org/js/vue.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

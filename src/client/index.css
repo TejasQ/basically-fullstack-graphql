@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+}
+
+:root {
+  --color__vue-green: #4fc08d;
+  --color__grey: #ddd;
+  --color__dark-grey: #747474;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color__dark-grey);
+}
+
+a:hover {
+  color: var(--color__vue-green);
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.app__search-container {
+  display: flex;
+}
+
+.input,
+.button {
+  padding: 4px;
+  font-size: 12px;
+  outline: none;
+}
+
+.input {
+  border: 1px solid var(--color__grey);
+}
+
+.button {
+  border: 0;
+  background-color: var(--color__vue-green);
+  color: white;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.app__results {
+  max-height: 70vh;
+  overflow: scroll;
+}
+
+.results-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  list-style-type: none;
+}
+
+.results-list__result {
+  width: 95%; /* so overflow doesn't clip the shadow */
+}
+
+.card {
+  display: flex;
+  margin: 16px 0;
+  padding: 16px;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card__image {
+  max-width: 80px;
+}
+
+.card__title {
+  margin-left: 16px;
+  max-width: 70%;
+}

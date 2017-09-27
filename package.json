@@ -1,0 +1,17 @@
+{
+  "name": "basically-fullstack-graphql",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Tejas Kumar <hello@tej.as>",
+  "scripts": {
+    "start": "node src/server/index.js"
+  },
+  "dependencies": {
+    "es6-promise": "^4.1.1",
+    "express": "^4.15.5",
+    "express-graphql": "^0.6.11",
+    "graphql": "^0.11.3",
+    "isomorphic-fetch": "^2.2.1"
+  }
+}
