@@ -1,4 +1,4 @@
-# Basically, Full-stack [GraphQL](http://graphql.org/) ![GraphQL](https://avatars0.githubusercontent.com/u/12972006?v=4&s=200)
+# Basically, Full-stack [GraphQL](http://graphql.org/) ![GraphQL](https://avatars0.githubusercontent.com/u/12972006?v=4&s=50)
 
 This _fairly trivial_ project aims at introducing a newcomer to GraphQL and the way it works. The code aims to explain the client and the server side of things.
 
