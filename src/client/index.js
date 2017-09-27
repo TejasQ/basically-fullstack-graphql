@@ -9,7 +9,8 @@
     data: {
       query: null,
       recipes: [],
-      searched: false,
+      searching: false,
+      untouched: true,
     },
     methods: {
       search: async function() {
@@ -29,11 +30,18 @@
           method: "post",
           body: JSON.stringify({ query }),
         }
+
+        // Start spinning, baby!
+        this.untouched = false,
+        this.searching = true
+        this.recipes = []
+
         // Get ready!
         const incomingRecipes = await fetch("/graphql", requestOptions).then(rawResponse => rawResponse.json())
+
         // Update the "state"
-        this.searched = true
-        this.recipes = incomingRecipes.data.recipes
+        this.searching = false
+        this.recipes = incomingRecipes.data.recipes || []
       },
     },
   }

@@ -13,6 +13,7 @@
           <button class="button app__search-button" type="button" v-on:click="search">Search</button>
         </form>
       </div>
+      <div class="loader" v-if="searching"></div>
       <div class="app__results" v-if="recipes.length">
         <ul class="results-list">
           <li class="results-list__result" v-for="recipe in recipes">
@@ -23,7 +24,7 @@
           </li>
         </ul>
       </div>
-      <div v-if="searched && !recipes.length">
+      <div v-if="!untouched && !searching && !recipes.length">
         <h2>No Results 🙁</h2>
       </div>
     </main>
