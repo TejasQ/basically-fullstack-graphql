@@ -15,6 +15,18 @@ This project is literally meant to be a POC and nothing too serious.
 
 To run the example locally, simply clone the repo and run `yarn install`, then `yarn start`. The project will be accessible under `http://localhost:4000`. Be sure to inspect the network requests for more insights into how it all works.
 
+## Frequently Asked Questions
+
+### But what about Redux/VueX?
+For this project, my motivation was that I was afraid for the longest time of the server side of GraphQL. HOW DOES IT KNOW WHATS GOING ON IN THE DATA LAYER? So I looked into how it works from zero to deployment, and when I found my answers (and was comfortable enough with them to explain them to others), other developers seemed to have been comforted by this explanation.
+
+In essence, this project aims to be a mass-produced version of that explanation, regardless of UI framework. _Basically,_ it is meant to answer 3 questions:
+* How does GraphQL communicate with a database? ([./src/server/resolver](https://github.com/TejasQ/basically-fullstack-graphql/blob/master/src/server/resolver.js))
+* How does GraphQL know about my data? ([.src/server/schema.js](https://github.com/TejasQ/basically-fullstack-graphql/blob/master/src/server/resolver.js))
+* How do I interact with it from my web page? ([./src/client/index.js](https://github.com/TejasQ/basically-fullstack-graphql/blob/master/src/client/index.js))
+
+When it comes to frameworks or state managers, we can deal with those in other projects. 😄
+
 ## Thanks to
 * [Vue](https://vuejs.org/), for an amazingly versatile bootstrap process.
 
