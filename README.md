@@ -22,8 +22,8 @@ For this project, my motivation was that I was afraid for the longest time of th
 
 In essence, this project aims to be a mass-produced version of that explanation, regardless of UI framework. _Basically,_ it is meant to answer 3 questions:
 * How does GraphQL communicate with a database? ([./src/server/resolver](https://github.com/TejasQ/basically-fullstack-graphql/blob/master/src/server/resolver.js))
-* How does GraphQL know about my data? ([.src/server/schema.js](https://github.com/TejasQ/basically-fullstack-graphql/blob/master/src/server/resolver.js))
-* How do I interact with it from my web page? ([./src/client/index.js](https://github.com/TejasQ/basically-fullstack-graphql/blob/master/src/client/index.js))
+* How does GraphQL know about my data? ([.src/server/schema](https://github.com/TejasQ/basically-fullstack-graphql/blob/master/src/server/schema.js))
+* How do I interact with it from my web page? ([./src/client/index](https://github.com/TejasQ/basically-fullstack-graphql/blob/master/src/client/index.js))
 
 When it comes to frameworks or state managers, we can deal with those in other projects. 😄
 
