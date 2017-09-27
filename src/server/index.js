@@ -17,8 +17,5 @@ app.use("/", express.static(resolve(`${__dirname}/../client`)))
 // Pick a port
 const port = process.env.port || 4000
 
-// Let the user know what's up
-console.log(`\x1b[32mServer on! LISTENING ON http://localhost:${port}`)
-
 // Can't serve if you're not listening
-app.listen(port)
+app.listen(port, () => console.log(`\x1b[32mServer on! LISTENING ON http://localhost:${port}`))
