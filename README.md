@@ -4,7 +4,7 @@ This _fairly trivial_ project aims at introducing a newcomer to GraphQL and the 
 
 The source code has been heavily commented and documented in order to explain what's going on. It is highly recommended to read through it. Do _not_ be afraid!
 
-[See it in action!](https://basically-fullstack-graphql-vkiwxyhjjw.now.sh/)
+[See it in action!](https://basically-fullstack-graphql-eljaqqjheh.now.sh/)
 
 ## The Project
 The project is basically a recipe search system to help someone cook yummy things. 🍜 It works by sending an ingredient as a query to a GraphQL server that retrieves data from (normally, what should be a database) a REST endpoint somewhere on the intrawebs (read: [RecipePuppy](http://www.recipepuppy.com/about/api/)) that has a nice open API we can query.
