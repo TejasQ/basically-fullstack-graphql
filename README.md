@@ -13,7 +13,7 @@ This project is literally meant to be a POC and nothing too serious.
 
 To run the example locally, simply clone the repo and run `yarn install`, then `yarn start`. The project will be accessible under `http://localhost:4000`. Be sure to inspect the network requests for more insights into how it all works.
 
-### Thanks to
+## Thanks to
 * [Vue](https://vuejs.org/), for an amazingly versatile bootstrap process.
 
 Happy Coding! 🎉
