@@ -17,7 +17,7 @@ To run the example locally, simply clone the repo and run `yarn install`, then `
 
 ## Frequently Asked Questions
 
-### But what about Redux/VueX?
+* ### But what about Redux/VueX?
 For this project, my motivation was that I was afraid for the longest time of the server side of GraphQL. HOW DOES IT KNOW WHATS GOING ON IN THE DATA LAYER? So I looked into how it works from zero to deployment, and when I found my answers (and was comfortable enough with them to explain them to others), other developers seemed to have been comforted by this explanation.
 
 In essence, this project aims to be a mass-produced version of that explanation, regardless of UI framework. _Basically,_ it is meant to answer 3 questions:
