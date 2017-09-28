@@ -3,7 +3,7 @@
   BAD IDEA USE BUNDLING, this is just a demo.
 
   Look into webpack or rollup asap if you haven't plz 🐱
-*/ const app = new Vue(
+*/ const vueApp = new Vue(
   {
     el: "#app",
     data: {
